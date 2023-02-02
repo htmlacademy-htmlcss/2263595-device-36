@@ -71,7 +71,7 @@ body {
   color: #000000;
 }
 
-.catalog-item-background {
+.catalog-list {
   width: 1160px;
   height: 180px;
   background-color: #ffe17f;
@@ -126,44 +126,6 @@ body {
   text-decoration: none;
 }
 
-.category-background-image {
-  width: 160px;
-  height: 160px;
-  background-color: #ffe17f;
-  background-position: 50% 50%;
-}
-
-.vr {
-  background-image: url("../images/category/VR-icon.svg");
-  background-repeat: no-repeat;
-
-}
-
-.selfie {
-  background-image: url("../images/category/selfie-icon.svg");
-  background-repeat: no-repeat;
-}
-
-.cameras {
-  background-image: url("../images/category/cameras-icon.svg");
-  background-repeat: no-repeat;
-}
-
-.fitness-bracelet {
-  background-image: url("../images/category/fitnes-bracelet-icon.svg");
-  background-repeat: no-repeat;
-}
-
-.smart-watches {
-  background-image: url("../images/category/smart-watches-icon.svg");
-  background-repeat: no-repeat;
-}
-
-.cvadrocopters {
-  background-image: url("../images/category/cvadrocopter-icon.svg");
-  background-repeat: no-repeat;
-}
-
 /* Табы */
 
 .navigation-menu-button-active {
@@ -201,10 +163,6 @@ body {
 /* О нас */
 
 .companies-item {
-  color: #ffc700;
-}
-
-.text {
   color: #000000;
   font-weight: 700;
   line-height: 20px;
@@ -260,6 +218,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
+  color: #000000;
 }
 
 /* Фильтр */
@@ -299,7 +258,7 @@ body {
   background-color: #f0f0f0;
 }
 
-.catalog-list {
+.catalog-section {
   width: 840px;
   background-color: #ffffff;
 }
@@ -309,6 +268,7 @@ body {
   font-size: 18px;
   line-height: 20px;
   text-decoration: none;
+  color:#000000;
 }
 
 .product-card-price {
@@ -362,6 +322,7 @@ body {
   width: 141px;
   height: 71px;
   padding: 25px;
+  color:#000000;
 }
 
 .pagination-disabled {
