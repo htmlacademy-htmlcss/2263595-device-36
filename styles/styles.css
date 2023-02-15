@@ -72,8 +72,7 @@ body {
   text-decoration: none;
   color: #000000;
   letter-spacing: 0.2em;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding: 15px;
 }
 
 .search-form,
@@ -81,6 +80,11 @@ body {
   font-size: 16px;
   background-color: transparent;
   float: left;
+}
+
+.header-form {
+  width: 519px;
+  margin-right: 26px;
 }
 
 .search-form {
@@ -97,7 +101,6 @@ body {
   border: 2px solid #000000;
   border-radius: 0px 50px 50px 0px;
   border-left: none;
-  margin-right: 26px;
 }
 
 .header-link {
@@ -106,7 +109,6 @@ body {
   align-self: center;
   padding-top: 5px;
   padding-bottom: 5px;
-  width: 150px;
 }
 
 .log-out-link {
@@ -114,7 +116,8 @@ body {
 }
 
 .catalog-button {
-  padding: 15px 57px 15px 0;
+  padding: 15px 57px 15px 15px;
+  margin-left: -15px;
   border: none;
   background-color: transparent;
 }
@@ -123,51 +126,57 @@ body {
   font-size: 16px;
   text-decoration: none;
   color: #000000;
+  line-height: 18px;
+}
+
+.catalog-link {
+  text-decoration: none;
+  color: #000000;
+  font-size: 16px;
+  line-height: 18px;
 }
 
 .catalog-list {
   width: 100%;
   height: 180px;
+  padding: 33px 60px 27px;
+  box-sizing: border-box;
   background-color: #ffe17f;
 }
 
-.catalog-list-open {
-  padding: 0;
-  padding-left: 60px;
-  padding-top: 33px;
+.catalog-item {
   list-style: none;
+  line-height: 18px;
+  width: 220px;
+}
+
+.catalog-column {
+  height: 120px;
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 18px;
+  padding: 0;
   margin: 0;
-}
-
-.column-1 {
-  min-width: 222px;
-  margin-right: 30px;
-}
-
-.column-2 {
-  min-width: 211px;
-  margin-right: 1px;
-}
-
-.column-3 {
-  min-width: 211px;
+  align-content: flex-start;
 }
 
 .navigation-list {
   padding: 0;
   list-style: none;
   display: flex;
-  width: 100%;
-  gap: 45px;
-  justify-content: space-between;
+  min-width: 501px;
+  gap: 15px;
   margin: 0;
+  margin-right: -15px;
+  flex-wrap: wrap;
 }
 
 .user-menu {
   display: flex;
   width: 100%;
   margin-bottom: 30px;
+  flex-wrap: wrap;
 }
 
 .header-container {
@@ -201,6 +210,8 @@ body {
   width: 230px;
   display: flex;
   justify-content: space-between;
+  margin-left: 26.5px;
+  ;
 }
 
 .login-link {
@@ -280,11 +291,23 @@ body {
   margin: 0;
   display: flex;
   gap: 40px;
+  flex-wrap: wrap;
 }
 
 .product-advantages-title {
   margin-bottom: 12px;
 }
+
+.slider-pagination {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  width: 76px;
+  height: 12px;
+  padding: 0;
+  margin: 0 auto;
+}
+
 
 /* Категории каталога */
 
@@ -425,7 +448,8 @@ body {
   margin-bottom: 48px;
 }
 
-.about-us-description, .description-contacts {
+.about-us-description,
+.description-contacts {
   margin-bottom: 30px;
 }
 
@@ -536,6 +560,7 @@ body {
   margin-top: 16px;
   display: flex;
   gap: 36px;
+  flex-wrap: wrap;
 }
 
 .breadcrumbs-link {
@@ -688,6 +713,7 @@ body {
 .pagination-number {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .pagination-link {
@@ -753,7 +779,8 @@ body {
 }
 
 .footer-contacts {
-  max-width: 178px;
+  max-width: 180px;
+  text-align: right;
   padding-top: 140px;
   margin-left: auto;
 }
