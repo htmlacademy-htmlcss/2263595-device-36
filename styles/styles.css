@@ -138,32 +138,25 @@ body {
 
 .catalog-list {
   width: 100%;
-  height: 180px;
+  min-height: 180px;
   padding: 33px 60px 27px;
   box-sizing: border-box;
   background-color: #ffe17f;
+  display: flex;
+  gap: 30px;
 }
 
 .catalog-item {
   list-style: none;
   line-height: 18px;
-  width: 220px;
-  margin-bottom: 18px;
-  margin-right: 30px;
-}
-
-.smart-watches-item {
-  margin-bottom: 54px;
 }
 
 .catalog-column {
-  height: 120px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
   padding: 0;
   margin: 0;
-  align-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 }
 
 .navigation-list {
@@ -332,6 +325,7 @@ body {
   margin: 0;
   padding: 0;
   margin-bottom: 70px;
+  flex-wrap: wrap;
 }
 
 .catalog-category-item {
