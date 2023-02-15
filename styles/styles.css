@@ -148,6 +148,12 @@ body {
   list-style: none;
   line-height: 18px;
   width: 220px;
+  margin-bottom: 18px;
+  margin-right: 30px;
+}
+
+.smart-watches-item {
+  margin-bottom: 54px;
 }
 
 .catalog-column {
@@ -155,7 +161,6 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 18px;
   padding: 0;
   margin: 0;
   align-content: flex-start;
