@@ -284,7 +284,7 @@ body {
 
 .header-logo:focus,
 .footer-logo:focus {
-  outline:none;
+  outline: none;
 }
 
 .device-logo {
@@ -1420,7 +1420,8 @@ body {
 
 .product-card:focus-within {
   outline: 2px solid #AF4FFF;
-  outline-offset: 2px;;
+  outline-offset: 2px;
+  ;
 }
 
 .product-card-link:focus {
@@ -1726,7 +1727,7 @@ body {
 }
 
 .footer-contacts-phone-link:focus,
-.contacts-address-phone:focus{
+.contacts-address-phone:focus {
   outline: 2px solid #AF4FFF;
   outline-offset: 2px;
 }
