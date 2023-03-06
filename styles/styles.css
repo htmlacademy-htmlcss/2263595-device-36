@@ -103,6 +103,10 @@ body {
   position: relative;
 }
 
+.compare-link {
+  min-width: 105px;
+}
+
 .search-form {
   width: 359px;
   height: 40px;
@@ -125,12 +129,19 @@ body {
   border-left: none;
 }
 
+.user-profile-link {
+  min-width: 146px;
+}
+
 .header-link {
   text-decoration: none;
   color: #000000;
   align-self: center;
   padding-top: 5px;
   padding-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header-link:hover,
@@ -215,13 +226,9 @@ body {
   transform: translateY(-19px);
 }
 
-.catalog-list-close {
-  display: none;
-}
-
-.catalog-list-open {
-  display: block;
-}
+    .catalog-list-close {
+      display: none;
+    }
 
 .catalog-item {
   list-style: none;
@@ -255,10 +262,14 @@ body {
   list-style: none;
   display: flex;
   min-width: 501px;
-  gap: 15px;
+  justify-content: space-between;
   margin: 0;
   margin-right: -15px;
   flex-wrap: wrap;
+}
+
+.contacts-link {
+  margin-right: -3px;
 }
 
 .user-menu {
@@ -283,7 +294,7 @@ body {
   height: 100%;
   background-color: #ffe17f;
   position: absolute;
-  top: 25px;
+  top: 20px;
   left: 0;
   z-index: -1;
 }
@@ -306,9 +317,9 @@ body {
 }
 
 .header-menu {
+  min-width: 240px;
   margin-left: auto;
   display: flex;
-  gap: 36px;
   justify-content: space-between;
 }
 
@@ -328,10 +339,7 @@ body {
 
 .login-link {
   margin: 0;
-}
-
-.header-icon {
-  margin-right: 12px;
+  min-width: 81px;
 }
 
 .catalog-open::after {
@@ -354,7 +362,7 @@ body {
   z-index: 2;
   top: 50%;
   transform: translateY(-50%);
-  margin-left: 7px;
+  margin-left: 18px;
   background-image: url("../images/icons/plus.svg");
   background-repeat: no-repeat;
   background-size: 16px;
@@ -375,6 +383,7 @@ body {
 
 .cart-link {
   position: relative;
+  min-width: 99px;
 }
 
 .cart-link::before {
@@ -1152,6 +1161,7 @@ body {
   float: left;
   padding-left: 16px;
   padding-right: 16px;
+  font:inherit;
 }
 
 .field::placeholder {
@@ -1170,6 +1180,7 @@ body {
   height: 57px;
   padding: 0;
   float: left;
+  letter-spacing: 0.2em;
 }
 
 .field:invalid:not(:placeholder-shown) {
@@ -1214,7 +1225,7 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-top: 16px;
+  margin-top: 15px;
   display: flex;
   gap: 36px;
   flex-wrap: wrap;
@@ -1552,7 +1563,7 @@ body {
 }
 
 .sorting {
-  padding: 25.5px 40px;
+  padding: 20px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1633,6 +1644,7 @@ body {
   color: #000000;
   margin: 0;
   max-width: 230px;
+  letter-spacing: -0.02em;
 }
 
 .product-card-price {
@@ -1726,9 +1738,9 @@ body {
   align-items: center;
   margin-bottom: 44px;
   font-family: "Raleway", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 800;
-  line-height: 21px;
+  line-height: 19px;
   text-transform: uppercase;
   color: #000000;
   background-color: transparent;
@@ -1986,7 +1998,9 @@ body {
 .footer-contacts-phone-link {
   color: #ffffff;
   font-style: normal;
-  text-decoration-line: underline;
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+
 }
 
 .footer-contacts-phone-link:focus,
