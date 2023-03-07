@@ -119,6 +119,7 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%) translateX(16px);
+  left:0;
 }
 
 .search-button {
@@ -202,7 +203,7 @@ body {
 }
 
 .catalog-button {
-  padding: 15px 57px 15px 15px;
+  padding: 15px 75px 15px 15px;
   margin-left: -15px;
   border: none;
   background-color: transparent;
@@ -1546,7 +1547,7 @@ body {
   font-size: 18px;
   line-height: 30px;
   font: inherit;
-  width: 141px;
+  min-width: 141px;
   height: 30px;
   appearance: none;
   border: none;
@@ -2031,9 +2032,13 @@ body {
   opacity: 0.3;
 }
 
-.footer-logo-link:focus-within {
+.footer-logo-link:focus-within .logo-html-academy {
   outline: 2px solid #AF4FFF;
   outline-offset: 2px;
+}
+
+.footer-logo-link {
+  outline: none;
 }
 
 .navigation-footer-link:focus-within {
