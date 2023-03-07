@@ -39,7 +39,7 @@
                 <button class="search-button" type="submit">Найти</button>
               </form>
               <div class="log-in-menu">
-                <a class="header-link user-frofile-link" href="#">
+                <a class="header-link user-profile-link" href="#">
                   <svg class="header-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
                     width="15" height="12" fill="none" viewBox="0 0 15 12">
                     <path fill="#000"
@@ -103,24 +103,24 @@
           </div>
 
           <div class="container">
-            <section class="catalog-list">
-              <ul class="catalog-column">
-                <li class="catalog-item"><a class="catalog-link active-link" href="#">Виртуальная реальность</a></li>
-                <li class="catalog-item"><a class="catalog-link" href="#">Моноподы для селфи</a></li>
-                <li class="catalog-item"><a class="catalog-link" href="#">Экшн-камеры</a></li>
-              </ul>
-              <ul class="catalog-column">
-                <li class="catalog-item"><a class="catalog-link" href="#">Фитнес-браслеты</a></li>
-                <li class="catalog-item"><a class="catalog-link" href="#">Умные часы</a></li>
-              </ul>
-              <ul class="catalog-column">
-                <li class="catalog-item"><a class="catalog-link" href="#">Квадрокоптеры</a></li>
-              </ul>
-            </section>
+            <div class="catalog-list-close">
+              <section class="catalog-list">
+                <ul class="catalog-column column-1">
+                  <li class="catalog-item"><a class="catalog-link active-link" href="#">Виртуальная реальность</a></li>
+                  <li class="catalog-item"><a class="catalog-link" href="catalog.html">Моноподы для селфи</a></li>
+                  <li class="catalog-item"><a class="catalog-link" href="#">Экшн-камеры</a></li>
+                </ul>
+                <ul class="catalog-column column-2">
+                  <li class="catalog-item"><a class="catalog-link" href="#">Фитнес-браслеты</a></li>
+                  <li class="catalog-item"><a class="catalog-link" href="#">Умные часы</a></li>
+                </ul>
+                <ul class="catalog-column column-3">
+                  <li class="catalog-item"><a class="catalog-link" href="#">Квадрокоптеры</a></li>
+                </ul>
+              </section>
+            </div>
           </div>
         </header>
-
-
 
         <main class="main-inner main-container">
           <header class="inner-header">
@@ -145,55 +145,85 @@
               <section class="catalog-products">
                 <h2 class="catalog-title filter-title">Фильтр</h2>
                 <form class="catalog-filter" action="#" method="get">
+                  <fieldset class="catalog-filter-group price-group">
+                    <legend class="catalog-filter-title price-title">Стоимость</legend>
+                    <div class="range">
+                      <div class="range-scale">
+                        <div class="range-bar" style="left:0; width: 119px;">
+                          <button type="button" class="range-toggle toggle-min">
+                            <div class="range-wrapper-inputs">
+                              <label class="catalog-filter-label filter-min">
+                                от <input class="range-input" type="number" value="0" name="min-price">
+                              </label>
+                            </div>
+                          </button>
+                          <button type="button" class="range-toggle toggle-max">
+                            <div class="range-wrapper-inputs">
+                              <label class="catalog-filter-label filter-max">
+                                до <input class="range-input" type="number" value="5000" name="max-price">
+                              </label>
+                            </div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </fieldset>
                   <fieldset class="catalog-filter-group">
                     <legend class="catalog-filter-title">Цвет</legend>
                     <ul class="catalog-filter-list">
                       <li class="catalog-filter-item">
                         <label class="control">
-                          <input class="control-input" type="checkbox" name="black" checked>
-                          Черный
+                          <input class="control-input visually-hidden" type="checkbox" name="black" checked>
+                          <span class="control-mark"></span>
+                          <span class="control-label">Черный</span>
                         </label>
                       </li>
                       <li class="catalog-filter-item">
                         <label class="control">
-                          <input class="control-input" type="checkbox" name="white" checked>
-                          Белый
+                          <input class="control-input visually-hidden" type="checkbox" name="white" checked>
+                          <span class="control-mark"></span>
+                          <span class="control-label">Белый</span>
                         </label>
                       </li>
                       <li class="catalog-filter-item">
                         <label class="control">
-                          <input class="control-input" type="checkbox" name="blue">
-                          Синий
+                          <input class="control-input visually-hidden" type="checkbox" name="blue">
+                          <span class="control-mark"></span>
+                          <span class="control-label">Синий</span>
                         </label>
                       </li>
                       <li class="catalog-filter-item">
                         <label class="control">
-                          <input class="control-input" type="checkbox" name="red">
-                          Красный
+                          <input class="control-input visually-hidden" type="checkbox" name="red">
+                          <span class="control-mark"></span>
+                          <span class="control-label">Красный</span>
                         </label>
                       </li>
                       <li class="catalog-filter-item">
                         <label class="control">
-                          <input class="control-input" type="checkbox" name="pink">
-                          Розовый
+                          <input class="control-input visually-hidden" type="checkbox" name="pink">
+                          <span class="control-mark"></span>
+                          <span class="control-label">Розовый</span>
                         </label>
                       </li>
                     </ul>
                   </fieldset>
 
-                  <fieldset class="catalog-filter-group">
+                  <fieldset class="catalog-filter-group radio-group">
                     <legend class="catalog-filter-title">Bluetooth</legend>
                     <ul class="catalog-filter-list">
-                      <li class="catalog-filter-item">
+                      <li class="catalog-filter-item-radio">
                         <label class="control">
-                          <input class="control-input" type="radio" name="Bluetooth" value="yes" checked>
-                          Есть
+                          <input class="control-radio visually-hidden" type="radio" name="Bluetooth" value="yes" checked>
+                          <span class="control-mark-radio"></span>
+                          <span class="control-label">Есть</span>
                         </label>
                       </li>
-                      <li class="catalog-filter-item">
+                      <li class="catalog-filter-item-radio">
                         <label class="control">
-                          <input class="control-input" type="radio" name="Bluetooth" value="no">
-                          Нет
+                          <input class="control-radio visually-hidden" type="radio" name="Bluetooth" value="no">
+                          <span class="control-mark-radio"></span>
+                          <span class="control-label">Нет</span>
                         </label>
                       </li>
                     </ul>
@@ -247,7 +277,7 @@
                       <a class="button-primary button-catalog" href="#">Подробнее</a>
                       <div class="product-card-text">
                         <a class="product-name-link">
-                          <h3 class="product-card-name">Профессиональная <br>селфи-палка</h3>
+                          <h3 class="product-card-name">Профессиональная селфи-палка</h3>
                         </a>
                         <span class="product-card-price">1 500 ₽</span>
                       </div>
@@ -260,7 +290,7 @@
                       <a class="button-primary button-catalog" href="#">Подробнее</a>
                       <div class="product-card-text">
                         <a class="product-name-link">
-                          <h3 class="product-card-name">Непотопяемая селфи-палка</h3>
+                          <h3 class="product-card-name">Непотопляемая<br> селфи-палка</h3>
                         </a>
                         <span class="product-card-price">2 500 ₽</span>
                       </div>
@@ -273,7 +303,7 @@
                       <a class="button-primary button-catalog" href="#">Подробнее</a>
                       <div class="product-card-text">
                         <a class="product-name-link">
-                          <h3 class="product-card-name">Селфи-палка «Следуй за мной»</h3>
+                          <h3 class="product-card-name">Селфи-палка «Следуй<br> за мной»</h3>
                         </a>
                         <span class="product-card-price">1 500 ₽</span>
                       </div>
@@ -284,7 +314,7 @@
 
                   <ul class="pagination">
                     <li class="pagination-item">
-                      <a class="pagination-button pagination-disabled">
+                      <a class="pagination-button pagination-prev pagination-disabled">
                         <span class="button-back">Назад</span>
                       </a>
                     </li>
@@ -302,12 +332,12 @@
                         <span class="other-pages">...</span>
                       </li>
                       <li class="pagination-item">
-                        <a class="pagination-link" href="#">15</a>
+                        <a class="pagination-link pagination-last" href="#">15</a>
                       </li>
                     </div>
                     <li class="pagination-item">
-                      <a class="pagination-button" href="#">
-                        <span class="button-next">Вперед</span>
+                      <a class="pagination-button pagination-next" href="#">
+                        <span class="button-next">Вперёд</span>
                       </a>
                     </li>
                   </ul>
@@ -321,7 +351,7 @@
           <div class="container footer-container">
             <section class="footer-address">
               <h2 class="visually-hidden">Адрес</h2>
-              <a class="header-logo" href="index.html">
+              <a class="footer-logo" href="index.html">
                 <img class="logo" src="images/logo/logo-yellow.svg" width="145" height="36" alt="Логотип сайта Device.">
               </a>
               <address class="page-footer-address">
