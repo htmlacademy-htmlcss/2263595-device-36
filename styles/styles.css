@@ -30,9 +30,14 @@
   border: 0;
   padding: 0;
   white-space: nowrap;
-  clip-path: inset(100%);
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  object-fit: contain;
 }
 
 html {
@@ -40,6 +45,7 @@ html {
 }
 
 body {
+  min-width: 1440px;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -109,25 +115,31 @@ body {
 
 .search-form {
   width: 359px;
-  height: 40px;
+  min-height: 40px;
   border: 2px solid #000000;
   border-radius: 50px 0 0 50px;
-  padding: 10px 48px;
+  padding: 8px 48px;
+  font: inherit;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .search-icon {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%) translateX(16px);
-  left:0;
+  top: 12px;
+  transform: translateX(16px);
+  left: 0;
 }
 
 .search-button {
   width: 160px;
-  height: 40px;
+  min-height: 40px;
   border: 2px solid #000000;
   border-radius: 0 50px 50px 0;
-  border-left: none;
+  font: inherit;
+  font-size: 16px;
+  transform: translateX(-1.5px);
+
 }
 
 .user-profile-link {
@@ -200,6 +212,7 @@ body {
 
 .log-out-link {
   opacity: 0.3;
+  margin-left: 28px;
 }
 
 .catalog-button {
@@ -227,9 +240,9 @@ body {
   transform: translateY(-19px);
 }
 
-    .catalog-list-close {
-      display: none;
-    }
+.catalog-list-close {
+  display: none;
+}
 
 .catalog-item {
   list-style: none;
@@ -482,6 +495,7 @@ body {
   font-size: 50px;
   line-height: 50px;
   margin: 0;
+  width: 455px;
 }
 
 .slider-description-title {
@@ -498,15 +512,11 @@ body {
   margin: 0;
 }
 
-.button-slide {
-  display: block;
-  margin-bottom: 50px;
-}
 
 .product-advantages {
   margin: 0;
   display: flex;
-  gap: 40px;
+  gap: 20px;
   flex-wrap: wrap;
 }
 
@@ -517,15 +527,18 @@ body {
 .slider-pagination {
   display: flex;
   list-style: none;
-  justify-content: center;
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .slider-container {
   position: relative;
-  margin-bottom: 70px;
+  margin-bottom: 54px;
 }
 
 .slider-pagination-item {
@@ -536,6 +549,9 @@ body {
   padding: 10px 5px;
   min-width: 220px;
   text-align: center;
+  display: block;
+  margin-bottom: 49px;
+  box-sizing: border-box;
 }
 
 .slider-prev {
@@ -545,7 +561,7 @@ body {
 
 .slider-next {
   background: url("../images/icons/right-tall-arrow.svg") no-repeat;
-  margin-left: 490px;
+  margin-left: 485px;
 }
 
 .slider-button {
@@ -598,7 +614,7 @@ body {
 
 .slider-controls {
   position: absolute;
-  top: 211px;
+  top: 195px;
 }
 
 /* Категории каталога */
@@ -610,29 +626,29 @@ body {
   line-height: 24px;
   color: #000000;
   text-decoration: none;
+
 }
 
 .catalog-category-list {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(6, 160px);
-  gap: 40px;
+  grid-template-rows: 160px 32px min-content;
+  column-gap: 40px;
   margin: 0;
   padding: 0;
   margin-bottom: 70px;
 }
 
-.catalog-category-title {
+ .catalog-category-title {
   margin: 0;
-  min-height: 60px;
-  position: absolute;
-  bottom: 0;
   letter-spacing: -0.02em;
   font-size: 18px;
+  min-height: 60px;
 }
 
 .catalog-category-item {
-  min-height: 253px;
+  grid-row: 3/4;
   position: relative;
 }
 
@@ -642,6 +658,7 @@ body {
   height: 160px;
   background-color: #ffe17f;
   position: absolute;
+  top: -192px;
 }
 
 .catalog-category-item:hover::before {
@@ -669,7 +686,7 @@ body {
   content: "";
   background-image: url("../images/category/selfie-icon.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
   position: absolute;
 }
 
@@ -729,7 +746,7 @@ body {
 .navigation-description-item {
   list-style: none;
   width: 694px;
-  padding-left: 121px;
+  padding-left: 116px;
 }
 
 .navigation-menu::after {
@@ -795,7 +812,7 @@ body {
 }
 
 .title-description-delivery {
-  width: 452px;
+  width: 455px;
 }
 
 .title-description-guarantee,
@@ -826,7 +843,7 @@ body {
   color: #ffe17f;
   background-color: #000000;
   width: 100%;
-  height: 40px;
+  min-height: 40px;
   padding-left: 17.5px;
   text-align: left;
 }
@@ -863,13 +880,12 @@ body {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 20px;
   text-transform: uppercase;
   background-color: #F0F0F0;
   border: 0;
   width: 100%;
   padding: 40px 125px;
-  text-align: center;
   letter-spacing: 0.2em;
   margin-bottom: 70px;
   position: relative;
@@ -929,11 +945,6 @@ body {
   opacity: 0.3;
 }
 
-.big-delivery-button {
-  width: 1160px;
-  margin: 0 auto;
-}
-
 /* О нас */
 
 .container-contacts {
@@ -950,9 +961,10 @@ body {
   background-color: #ffc700;
   display: inline-block;
   position: absolute;
-  top: 6px;
+  top: 50%;
+  transform: translateY(-50%);
   bottom: 6px;
-  left: 0;
+  left: 3.5px;
 }
 
 .companies-list {
@@ -988,14 +1000,15 @@ body {
   font-weight: 700;
   line-height: 20px;
   position: relative;
-  padding-left: 26px;
+  padding-left: 37.5px;
+  letter-spacing: -0.02em;
 }
-
 
 .button-about-us {
   padding: 10px 6.14px;
   min-width: 270px;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .button-wtite-us {
@@ -1095,6 +1108,7 @@ body {
   min-width: 259px;
   text-align: center;
   padding: 10px 5.89px;
+  box-sizing: border-box;
 }
 
 /* Подписка */
@@ -1115,7 +1129,8 @@ body {
 }
 
 .form-correction {
-  width: 160px;
+  min-width: 158px;
+  max-width: 330px;
   height: 30px;
   margin-left: auto;
   padding: 13.5px 0;
@@ -1139,12 +1154,12 @@ body {
 }
 
 .description-newsletter {
-  width: 560px;
-  padding-top: 74px;
+  width: 553px;
+  padding-top: 72px;
 }
 
 .subscription-newsletter {
-  padding-top: 64px;
+  padding-top: 62px;
   width: 400px;
   padding-left: 7px;
   margin: 0;
@@ -1157,12 +1172,13 @@ body {
   border: 0;
   border-bottom: 3px solid #c4c4c4;
   width: 557px;
-  height: 54px;
+  height: 57px;
   padding: 0;
   float: left;
   padding-left: 16px;
   padding-right: 16px;
-  font:inherit;
+  font: inherit;
+  box-sizing: border-box;
 }
 
 .field::placeholder {
@@ -1177,11 +1193,12 @@ body {
   border: 3px solid #c4c4c4;
   background-color: transparent;
   text-transform: uppercase;
-  width: 253px;
+  width: 255px;
   height: 57px;
   padding: 0;
   float: left;
   letter-spacing: 0.2em;
+  box-sizing: border-box;
 }
 
 .field:invalid:not(:placeholder-shown) {
@@ -1371,13 +1388,6 @@ body {
   left: -9px;
 }
 
-.filter-min,
-.filter-max {
-  position: absolute;
-  bottom: -25px;
-  transform: translateX(-48%);
-}
-
 .toggle-max {
   top: -9px;
   right: -9px;
@@ -1390,7 +1400,8 @@ body {
   border: none;
   outline: none;
   padding: 0;
-  appearance: textfield;
+  -webkit-appearance: textfield;
+          appearance: textfield;
   margin-left: 4px;
   font-family: "Rubik", sans-serif;
 }
@@ -1398,14 +1409,30 @@ body {
 .catalog-filter-label {
   font-size: 14px;
   opacity: 0.3;
+  line-height: 20px;
   display: grid;
   grid-template-columns: min-content 40px;
 }
 
 .filter-min {
   display: grid;
-  grid-template-columns: min-content 12px;
+  grid-template-columns: min-content 15px;
 }
+
+.filter-max {
+  position: absolute;
+  top: 14px;
+  right: -50%;
+  transform: translateX(-55%);
+}
+
+.filter-min {
+  position: absolute;
+  top: 14px;
+  left: -50%;
+  transform: translateX(155%);
+}
+
 
 .catalog-filter-label:focus-within {
   outline: 2px solid #af4fff;
@@ -1415,7 +1442,8 @@ body {
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 
@@ -1548,8 +1576,10 @@ body {
   line-height: 30px;
   font: inherit;
   min-width: 141px;
+  max-width: 300px;
   height: 30px;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   border: none;
   padding-right: 32px;
   background: transparent;
@@ -1616,6 +1646,7 @@ body {
 
 .sorting-title {
   margin: 0;
+  max-width: 300px;
 }
 
 .sorting-list {
@@ -1657,6 +1688,10 @@ body {
   margin: 0;
   max-width: 230px;
   letter-spacing: -0.02em;
+}
+
+.product-name-link {
+  text-decoration: none;
 }
 
 .product-card-price {
@@ -1741,8 +1776,8 @@ body {
 /* Кнопка загрузить еще */
 
 .button-download-more {
-  width: 100%;
-  height: 55px;
+  width: 760px;
+  min-height: 55px;
   border: 3px solid #e5e5e5;
   display: flex;
   flex-direction: row;
@@ -1777,14 +1812,14 @@ body {
 
 /* Пагинация */
 
-.pagination {
-  width: 100%;
-  height: 71px;
+.pagination-container {
+  width: 760px;
+  min-height: 71px;
   background-color: #ebebeb;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   list-style: none;
   padding: 0;
   margin: 0 auto;
@@ -1792,9 +1827,12 @@ body {
 
 .pagination-number {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
-  min-width: 200px;
+  max-width: 450px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .pagination-link {
@@ -1824,10 +1862,10 @@ body {
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
+  display: flex;
+  align-items: center;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  width: 141px;
-  height: 100%;
   padding: 25px 25px;
   color: #000000;
   text-decoration: none;
@@ -1835,6 +1873,7 @@ body {
 
 .pagination-next {
   text-decoration: none;
+  justify-self: flex-end;
 }
 
 .pagination-disabled {
@@ -1900,6 +1939,7 @@ body {
 .logo {
   margin-bottom: 35px;
   display: block;
+  color: #ffffff;
 }
 
 .logo:hover {
@@ -1924,7 +1964,8 @@ body {
 .navigation-footer-list {
   list-style: none;
   display: flex;
-  width: 444px;
+  flex-wrap: wrap;
+  width: 446px;
   justify-content: space-between;
   padding: 0;
   margin: 0;
@@ -2398,17 +2439,17 @@ body {
 
 .quantity-decrease:hover .modal-icon-button,
 .quantity-increase:hover .modal-icon-button {
- opacity: 0.6;
+  opacity: 0.6;
 }
 
 .quantity-decrease:hover,
 .quantity-increase:hover {
- background-color: #ebebeb;
+  background-color: #ebebeb;
 }
 
 .quantity-decrease:active,
 .quantity-increase:active {
- background-color: #f0f0f0;
+  background-color: #f0f0f0;
 }
 
 .quantity-decrease:active .modal-icon-button,
@@ -2418,8 +2459,8 @@ body {
 
 .quantity-decrease:disabled,
 .quantity-increase:disabled {
- background-color: #f0f0f0;
- opacity: 0.3;
+  background-color: #f0f0f0;
+  opacity: 0.3;
 }
 
 .form-number::-webkit-outer-spin-button,
