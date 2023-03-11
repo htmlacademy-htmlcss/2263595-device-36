@@ -2080,6 +2080,15 @@ body {
   text-underline-offset: 4px;
 }
 
+.footer-contacts-phone-link:hover {
+  color: #FFC700;
+}
+
+.footer-contacts-phone-link:active {
+  color: #FFC700;
+  opacity: 0.3;
+}
+
 .footer-contacts-phone-link:focus,
 .contacts-address-phone:focus {
   outline: 2px solid #AF4FFF;
