@@ -45,8 +45,7 @@ html {
 }
 
 body {
-  min-width: 1440px;
-  overflow-x: hidden;
+  min-width: 1423px;
   margin: 0;
   padding: 0;
   display: flex;
@@ -302,7 +301,8 @@ body {
 
 .header-container,
 .internal-container {
-  width: 1040px;
+  width: 1160px;
+  box-sizing: border-box;
   margin: 0 auto;
   padding-left: 60px;
   padding-right: 60px;
