@@ -10,7 +10,7 @@
 
   <body>
     <header class="page-header">
-      <div class="header-container">
+      <div class="internal-container">
         <a class="header-logo" href="index.html"><img class="device-logo" src="images/logo/device-logo.svg" width="145"
             height="36" alt="Логотип сайта Device."></a>
         <div class="user-menu">
@@ -23,7 +23,9 @@
                 <path fill="#fff" d="M0 0h16v16H0z" />
               </defs>
             </svg>
-            <input class="search-form" type="search" name="search" placeholder="Поиск по сайту">
+            <label class="visually-hidden" for="header-search-form">Поиск по сайту</label>
+            <input class="search-form" type="search" id="header-search-form" name="search" placeholder="Поиск по сайту"
+              required>
             <button class="search-button" type="submit">Найти</button>
           </form>
           <div class="log-in-menu">
