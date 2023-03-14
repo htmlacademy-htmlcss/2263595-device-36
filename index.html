@@ -23,7 +23,9 @@
                 <path fill="#fff" d="M0 0h16v16H0z" />
               </defs>
             </svg>
-            <input class="search-form" type="search" name="search" placeholder="Поиск по сайту">
+            <label class="visually-hidden" for="header-search-form">Поиск по сайту</label>
+            <input class="search-form" type="search" id="header-search-form" name="search" placeholder="Поиск по сайту"
+              required>
             <button class="search-button" type="submit">Найти</button>
           </form>
           <a class="header-link login-link" href="#">
@@ -159,102 +161,100 @@
 
     <main class="main-container main-index">
       <h1 class="visually-hidden">Интернет-магазин гаджетов «Девайс»</h1>
-      <div class="slider-section">
-        <div class="container slider-container">
-          <section class="slider slider-current">
-            <h2 class="visually-hidden">Первый слайд.</h2>
-            <img class="slider-image" src="images/slider/slider-1.png" width="560" height="560" alt="Квадрокоптер.">
-            <section class="slider-description cvadrocopter-description">
-              <h2 class="title slider-description-title">Порхает как бабочка,
-                жалит как пчела!</h2>
-              <p class="description slider-description-text">Этот обычный, на первый взгляд, квадрокоптер оснащен
-                мощным
-                лазером, замаскированным под стандартную камеру.</p>
-              <a class="button-primary button-slide" href="#">Подробнее</a>
-              <dl class="product-advantages">
-                <div class="advantage-block">
-                  <dt class="product-advantages-title">800 м</dt>
-                  <dd class="product-advantage-description">Дальность полета</dd>
-                </div>
-                <div class="advantage-block">
-                  <dt class="product-advantages-title">50 м</dt>
-                  <dd class="product-advantage-description">Радиус поражения</dd>
-                </div>
-              </dl>
-            </section>
+      <div class="container slider-container">
+        <section class="slider slider-current">
+          <h2 class="visually-hidden">Первый слайд.</h2>
+          <img class="slider-image" src="images/slider/slider-1.png" width="560" height="560" alt="Квадрокоптер.">
+          <section class="slider-description cvadrocopter-description">
+            <h2 class="title slider-description-title">Порхает как бабочка,
+              жалит как пчела!</h2>
+            <p class="description slider-description-text">Этот обычный, на первый взгляд, квадрокоптер оснащен
+              мощным
+              лазером, замаскированным под стандартную камеру.</p>
+            <a class="button-primary button-slide" href="#">Подробнее</a>
+            <dl class="product-advantages">
+              <div class="advantage-block">
+                <dt class="product-advantages-title">800 м</dt>
+                <dd class="product-advantage-description">Дальность полета</dd>
+              </div>
+              <div class="advantage-block">
+                <dt class="product-advantages-title">50 м</dt>
+                <dd class="product-advantage-description">Радиус поражения</dd>
+              </div>
+            </dl>
           </section>
+        </section>
 
-          <section class="slider">
-            <h2 class="visually-hidden">Второй слайд.</h2>
-            <img src="images/slider/slider-2.png" width="560" height="560" alt="Умные часы.">
-            <section class="slider-description smart-watches-description">
-              <h2 class="title slider-description-title">Худеем
-                правильно!</h2>
-              <p class="description slider-description-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не
-                пропускать занятия и соблюдать диету.</p>
-              <a class="button-primary button-slide" href="#">Подробнее</a>
-              <dl class="product-advantages">
-                <div class="advantage-block">
-                  <dt class="product-advantages-title">48 часов</dt>
-                  <dd class="product-advantage-description">Без подзарядки</dd>
-                </div>
-              </dl>
-            </section>
+        <section class="slider">
+          <h2 class="visually-hidden">Второй слайд.</h2>
+          <img src="images/slider/slider-2.png" width="560" height="560" alt="Умные часы.">
+          <section class="slider-description smart-watches-description">
+            <h2 class="title slider-description-title">Худеем
+              правильно!</h2>
+            <p class="description slider-description-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не
+              пропускать занятия и соблюдать диету.</p>
+            <a class="button-primary button-slide" href="#">Подробнее</a>
+            <dl class="product-advantages">
+              <div class="advantage-block">
+                <dt class="product-advantages-title">48 часов</dt>
+                <dd class="product-advantage-description">Без подзарядки</dd>
+              </div>
+            </dl>
           </section>
-          <section class="slider">
-            <h2 class="visually-hidden">Третий слайд.</h2>
-            <img src="images/slider/slider-3.png" width="560" height="560" alt="Селфи-палка.">
-            <section class="slider-description selfie-description">
-              <h2 class="title slider-description-title">Делай селфи,
-                как Бен Стиллер!</h2>
-              <p class="description slider-description-text">Самая длинная палка для селфи доступна в нашем магазине.
-                Восемь
-                (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
-              <a class="button-primary button-slide" href="#">Подробнее</a>
-              <dl class="product-advantages">
-                <div class="advantage-block">
-                  <dt class="product-advantages-title">8,5 м</dt>
-                  <dd class="product-advantage-description">Длина палки</dd>
-                </div>
-                <div class="advantage-block">
-                  <dt class="product-advantages-title">5 кг</dt>
-                  <dd class="product-advantage-description">Вес палки</dd>
-                </div>
-                <div class="advantage-block">
-                  <dt class="product-advantages-title">Карбон</dt>
-                  <dd class="product-advantage-description">Материал</dd>
-                </div>
-              </dl>
-            </section>
+        </section>
+        <section class="slider">
+          <h2 class="visually-hidden">Третий слайд.</h2>
+          <img src="images/slider/slider-3.png" width="560" height="560" alt="Селфи-палка.">
+          <section class="slider-description selfie-description">
+            <h2 class="title slider-description-title">Делай селфи,
+              как Бен Стиллер!</h2>
+            <p class="description slider-description-text">Самая длинная палка для селфи доступна в нашем магазине.
+              Восемь
+              (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
+            <a class="button-primary button-slide" href="#">Подробнее</a>
+            <dl class="product-advantages">
+              <div class="advantage-block">
+                <dt class="product-advantages-title">8,5 м</dt>
+                <dd class="product-advantage-description">Длина палки</dd>
+              </div>
+              <div class="advantage-block">
+                <dt class="product-advantages-title">5 кг</dt>
+                <dd class="product-advantage-description">Вес палки</dd>
+              </div>
+              <div class="advantage-block">
+                <dt class="product-advantages-title">Карбон</dt>
+                <dd class="product-advantage-description">Материал</dd>
+              </div>
+            </dl>
           </section>
+        </section>
 
-          <div class="slider-controls">
-            <button class="slider-button slider-prev" type="button">
-              <span class="visually-hidden">Предыдущий слайд.</span>
-            </button>
-            <button class="slider-button slider-next" type="button">
-              <span class="visually-hidden">Следущий слайд.</span>
-            </button>
-          </div>
-
-          <ol class="slider-pagination">
-            <li class="slider-pagination-item">
-              <button class="slider-pagination-button slider-pagination-button-active" type="button">
-                <span class="visually-hidden">Первый слайд.</span>
-              </button>
-            </li>
-            <li class="slider-pagination-item">
-              <button class="slider-pagination-button" type="button">
-                <span class="visually-hidden">Второй слайд.</span>
-              </button>
-            </li>
-            <li class="slider-pagination-item">
-              <button class="slider-pagination-button" type="button">
-                <span class="visually-hidden">Третий слайд.</span>
-              </button>
-            </li>
-          </ol>
+        <div class="slider-controls">
+          <button class="slider-button slider-prev" type="button">
+            <span class="visually-hidden">Предыдущий слайд.</span>
+          </button>
+          <button class="slider-button slider-next" type="button">
+            <span class="visually-hidden">Следущий слайд.</span>
+          </button>
         </div>
+
+        <ol class="slider-pagination">
+          <li class="slider-pagination-item">
+            <button class="slider-pagination-button slider-pagination-button-active" type="button">
+              <span class="visually-hidden">Первый слайд.</span>
+            </button>
+          </li>
+          <li class="slider-pagination-item">
+            <button class="slider-pagination-button" type="button">
+              <span class="visually-hidden">Второй слайд.</span>
+            </button>
+          </li>
+          <li class="slider-pagination-item">
+            <button class="slider-pagination-button" type="button">
+              <span class="visually-hidden">Третий слайд.</span>
+            </button>
+          </li>
+        </ol>
       </div>
 
       <section class="catalog-category">
@@ -385,7 +385,9 @@
             длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
           <div class="subscription-form">
             <form class="newsletter-form" action="https://echo.htmlacademy.ru" method="post">
-              <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" required>
+              <label class="visually-hidden" for="main-subscription-form">Ваш e-mail</label>
+              <input class="field" id="main-subscription-form" placeholder="Ваш e-mail" type="email"
+                name="newsletter-email" required>
               <button class="button newsletter-button" type="submit">
                 Подписаться
               </button>
@@ -492,19 +494,20 @@
             <p class="field-group">
               <label class="field-title" for="auth-name">Ваше имя:</label>
               <input class="auth-form-field form-name" type="text" id="auth-name" name="auth-name"
-                placeholder="Введите имя">
+                placeholder="Введите имя" required>
               <span class="small-text">Добавьте имя</span>
             </p>
             <p class="field-group">
               <label class="field-title" for="auth-mail">Ваш e-mail:</label>
               <input class="auth-form-field form-email" type="email" id="auth-mail"
-                aria-describedby="error-message-mail" name="auth-mail" placeholder="Введите ваш e-mail" value="почта">
+                aria-describedby="error-message-mail" name="auth-mail" placeholder="Введите ваш e-mail" value="почта"
+                required>
               <span class="error-email" aria-live="polite" id="error-message-mail">Забавный у вас адрес</span>
             </p>
             <p class="field-group form-text-group">
               <label class="field-title text-title" for="auth-text">Что нужно привезти:</label>
               <input class="auth-form-field form-text" type="text" id="auth-text" name="auth-text"
-                placeholder="В свободной форме">
+                placeholder="В свободной форме" required>
             </p>
             <p class="field-group form-group">
               <label class="field-title form-title" for="auth-quantity">Количество:</label>
